@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            position: relative;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation: rotate 3s ease-in-out infinite alternate 2s;
+            
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+                top: 0px;
+                left: 0px;
+                border-radius: 15%;
+            }
+            25%{
+                transform: rotate(90deg);
+                border-radius: 35%;
+                top: 150px;
+                left: 0px;
+            }
+            50%{
+                transform: rotate(180deg);
+                border-radius: 50%;
+                top: 0px;
+                left: 350px;
+            }
+            75%{
+                transform: rotate(270deg);
+                border-radius: 30%;
+                top: 150px;
+                left: 700px;
+            }
+            100%{
+                transform: rotate(360deg);
+                border-radius: 0%;
+                top: 0px;
+                left: 1032px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main"></div>
+    
+</body>
+</html>
